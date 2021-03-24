@@ -1,6 +1,6 @@
 # Ignorant
 #### For BTC Donations : 1FHDM49QfZX6pJmhjLE5tB2K6CaTLMZpXZ
-### ignorant does not alert the target email
+### ignorant does not alert the target phone number
 ignorant allows you to check if a phone number is used on different sites like snapchat, instagram.
 
 ![](https://github.com/megadose/gif-demo/raw/master/ignorant-demo.gif)
