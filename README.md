@@ -70,4 +70,4 @@ The result of the modules is in this form : ```{"name": "instagram","domain":"in
 | ------------------- | -------------------------------------- | ----------------- | ------------------- |
 | amazon              | amazon.com                             | login             |     ✘               |
 | instagram           | instagram.com                          | register          |     ✘               |
-| snapchat            | snapchat.com                           | register          |     ✘               |
+| snapchat            | snapchat.com                           | other             |     ✘               |

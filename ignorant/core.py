@@ -24,7 +24,7 @@ from ignorant.instruments import TrioProgress
 
 DEBUG = False
 
-__version__ = "1"
+__version__ = "1.1"
 
 
 def import_submodules(package, recursive=True):
@@ -164,5 +164,6 @@ async def maincore():
     await client.aclose()
     # Print the result
     print_result(out,args,phone, country_code,start_time,websites)
+    credit()
 def main():
     trio.run(maincore)
