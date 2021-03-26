@@ -24,7 +24,7 @@ from ignorant.instruments import TrioProgress
 
 DEBUG = False
 
-__version__ = "1.1"
+__version__ = "1.2"
 
 
 def import_submodules(package, recursive=True):
@@ -89,7 +89,10 @@ def print_result(data,args,phone, country_code,start_time,websites):
 
     description = print_color("[+] Phone number used","green",args) + "," + print_color(" [-] Phone number not used", "magenta",args) + "," + print_color(" [x] Rate limit","red",args)
     full_number="+"+str(country_code)+" "+str(phone)
-    print("\033[H\033[J")
+    if args.noclear==False:
+        print("\033[H\033[J")
+    else:
+        print("\n")
     print("*" * (len(full_number) + 6))
     print("   " + full_number)
     print("*" * (len(full_number) + 6))
@@ -132,6 +135,8 @@ async def maincore():
                     help="Displays only the sites used by the target email address.")
     parser.add_argument("--no-color", default=False, required=False,action="store_true",dest="nocolor",
                     help="Don't color terminal output")
+    parser.add_argument("--no-clear", default=False, required=False,action="store_true",dest="noclear",
+                    help="Do not clear the terminal to display the results")
     parser.add_argument("-T","--timeout", default=10, required=False,dest="timeout",
                     help="Set max timeout value (default 10)")
 
