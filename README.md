@@ -59,7 +59,7 @@ The result of the modules is in this form : ```{"name": "instagram","domain":"in
 - exists : know an account is associated with the mail
 
 ## Thank you to :
-- [social-media-detector-api](https://github.com/yazeed44/social-media-detector-api)
+- [yazeed44](https://github.com/yazeed44)
 
 ## 📝 License
 
