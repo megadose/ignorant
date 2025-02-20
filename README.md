@@ -58,7 +58,7 @@ trio.run(main)
 
 
 ## The output of the modules
-The result of the modules is in this form : ```{"name": "instagram","domain":"instagram.com","method":"orther","frequent_rate_limit":"False","rateLimit": False,"exists": False}```
+The result of the modules is in this form : ```{"name": "instagram","domain":"instagram.com","method":"other","frequent_rate_limit":"False","rateLimit": False,"exists": False}```
 - rateLitmit : is to find out if you've been rate-limited
 - exists : know an account is associated with the mail
 
