@@ -115,7 +115,19 @@ def print_result(data,args,phone, country_code,start_time,websites):
 
 
 async def launch_module(module, phone, country_code, client, out):
-    data={'amazon':'amazon.com','instagram':'instagram.com','snapchat': 'snapchat.com'}
+# line 118 — replace the old one-liner with this
+    data={
+        'amazon':'amazon.com','flipkart':'flipkart.com','blinkit':'blinkit.com','zepto':'zepto.com',
+        'instagram':'instagram.com','snapchat':'snapchat.com','facebook':'facebook.com',
+        'twitter':'twitter.com','tiktok':'tiktok.com','pinterest':'pinterest.com',
+        'linkedin':'linkedin.com','github':'github.com','medium':'medium.com',
+        'telegram':'telegram.org','whatsapp':'whatsapp.com','viber':'viber.com',
+        'tinder':'tinder.com','bumble':'bumble.com','hinge':'hinge.co',
+        'reddit':'reddit.com','discord':'discord.com','quora':'quora.com',
+        'paytm':'paytm.com','phonpe':'phonepe.com',
+        'spotify':'spotify.com',
+        'google':'google.com',
+    }
     try:
         await module(phone, country_code, client, out)
     except :
