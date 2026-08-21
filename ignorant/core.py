@@ -88,7 +88,8 @@ def print_result(data,args,phone, country_code,start_time,websites):
             return(text)
 
     description = print_color("[+] Phone number used","green",args) + "," + print_color(" [-] Phone number not used", "magenta",args) + "," + print_color(" [x] Rate limit","red",args)
-    full_number="+"+str(country_code)+" "+str(phone)
+    country_code = str(country_code).lstrip("+")
+    full_number = "+" + country_code + " " +str(phone)
     if args.noclear==False:
         print("\033[H\033[J")
     else:
