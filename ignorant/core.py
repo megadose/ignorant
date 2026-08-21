@@ -137,7 +137,7 @@ async def maincore():
                     help="Don't color terminal output")
     parser.add_argument("--no-clear", default=False, required=False,action="store_true",dest="noclear",
                     help="Do not clear the terminal to display the results")
-    parser.add_argument("-T","--timeout", default=10, required=False,dest="timeout",
+    parser.add_argument("-T","--timeout", default=10, type=float, required=False,dest="timeout",
                     help="Set max timeout value (default 10)")
 
     check_update()
